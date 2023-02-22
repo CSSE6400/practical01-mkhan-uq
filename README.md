@@ -1,13 +1,24 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-f4981d0f882b2a3f0472912d15f9806d57e124e0fc890972558857b51b24a6f9.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=10232089)
-# CSSE6400 Week 1 Practical
+# CSSE6400 Week 1 Practical - TODO API
 
-Construction of a simple HTTP server in Python.
+- Full details can be found here: https://csse6400.uqcloud.net/practicals/week01.pdf
+- A minimal HTTP API of a todo app (HTTP server in Python) using the Flask framework.
 
-Please see the [instructions](https://csse6400.uqcloud.net/practicals/week01.pdf) for more details.
+# Environment Setup
 
-Update this README file with appropriate information about your project,
-including how to run it.
+- Install pipenv to manage the Python libraries:
 
-There are [resources](https://www.makeareadme.com) available to help you write a good README file.
+```bash
+python3 -m pip install pipenv
+```
 
+- Install Flask
 
+```bash
+pipenv install flask
+```
+
+# Run the app on port 6400 using the following command:
+
+```bash
+pipenv run flask --app todo run -p 6400
+```
