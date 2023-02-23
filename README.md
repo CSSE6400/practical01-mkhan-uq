@@ -3,11 +3,6 @@
 - This week we are creating a minimal HTTP API for a todo app (HTTP server in Python) 
 - [Practical handout with details can be found here](https://csse6400.uqcloud.net/practicals/week01.pdf)
 
-# Commiting changes to GitHub
-	Note: On Windows, if using github desktop then token is not required 
-	for access. Authentication is done through the browser.	Other Git 
-	clients will need a token that can be easily be created in the github account.
-	
 # Setup and Installation in Windows using Visual Studio Code (VSCode)
 
 #### For Windows: There are a couple of workflows:
@@ -24,7 +19,7 @@
 - The extention for WSL allows VSCode to switch to the linux file system and list Ubuntu version of the extentions
 - Install Ubuntu version of the 'RestClient' extention in VSCode as mentoned in the practical handout.
 - Run the following commands in the terminal.
-	- ```sudo apt install python3``` - installs the latest python version.
+	- ```sudo apt install python3``` - installs the latest python version (Python 3.10.6).
 	- ```sudo apt install python3 - pip``` - installs the package manager
 	- ```sudo apt install pipenv``` - to manage the Python libraries we need for this project
 	- ```pipenv --python 3``` - Init Python environment under project root directory
@@ -63,3 +58,18 @@ Unit tests: ```bash ./.csse6400/bin/unittest.sh```
 ## 2 - Using Windows
 
  **TODO** 
+
+# Commiting changes to GitHub
+	Note: On Windows, if using github desktop then token is not required 
+	for access. Authentication is done through the browser.	Other Git 
+	clients will need a token that can be easily be created in the github account.
+	
+	If using the second flow, where the latest windows version of python
+	(3.11.2) is causing the CI tests to fail. Remove the following line from 
+	the Pipfile.
+
+``` 
+[requires]
+python_version = "3.10"
+python_full_version = "3.10.6"
+```
