@@ -18,10 +18,10 @@
 ## 1 - Using Windows Subsystem for Linux (WSL)
 
 - Install WSL - (https://learn.microsoft.com/en-us/windows/wsl/install)
-- Clone practical repo (if havent done before) and open in VSCode
+- Clone practical repo (if haven't done so) and open in VSCode
 - Install the WSL extention for VSCode
-- Switch (from the status bar) to WSL Ubuntu mode in VSCode. This should change the - terminal to Bash. (also can be done by just typing 'wsl' in the terminal)
-- The extention for WSL allow VSCode to switch to the linux file system and list Ubuntu version of the extentions
+- Switch (from the status bar) to WSL Ubuntu mode in VSCode. This should change the - terminal to Bash. (can also be done by just typing 'wsl' in the terminal)
+- The extention for WSL allows VSCode to switch to the linux file system and list Ubuntu version of the extentions
 - Install Ubuntu version of the 'RestClient' extention in VSCode as mentoned in the practical handout.
 - Run the following commands in the terminal.
 	- ```sudo apt install python3``` - installs the latest python version.
