@@ -57,7 +57,7 @@ The following command will run the app on port 6400.
 - `netstat -ano | findstr :<PORT>` - finds the Process ID (PID) -` taskkill /PID <PID> /F`
 - https://stackoverflow.com/a/39633428
 
-# Running Tests locally
+# Running tests locally
 
     Note: Don't commit any of the following changes made here for now.
 
