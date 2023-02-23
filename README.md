@@ -11,10 +11,8 @@
 # Setup and Installation in Windows using Visual Studio Code (VSCode)
 
 #### For Windows: There are a couple of workflows:
-1. Using Windows Subsystem for Linux (WSL)
-	- Installing WSL and switching to WSL mode in Visual Studo
-2. Using Windows :)
-	- Downloading python executable for Python
+	1. Using Windows Subsystem for Linux (WSL)
+	2. Using Windows :)
 
 
 ## 1 - Using Windows Subsystem for Linux (WSL)
@@ -36,14 +34,20 @@
 ## Running the app on port 6400
 ```pipenv run flask --app todo run -p 6400```
 
-Note: If port is not avalilable then run the following in the bash terminal to clear the port.
+	Note: If port is not avalilable then run the following in the bash terminal
+	to clear the port.
+	
 ```fuser -k 6400/tcp``` - kills process on this port
 https://stackoverflow.com/a/11596144
 
 
 ## Running Tests locally
 
-The bash files that are under ./.csse6400/bin will have line ending issues when running tests locally.  In VSCode open each of the bash file, change the line ending in VSCode from 'CRLF' to 'LF' and save one at a time. This option to switch between line endings is available on the status bar of VSCode.
+	The bash files that are under ./.csse6400/bin will have line ending issues
+	when running tests locally.  In VSCode open each of the bash file, change
+	the line ending in VSCode from 'CRLF' to 'LF' and save one at a time. 
+	This option to switch between line endings is available on the status bar
+	of VSCode.
 
 For the unittest.sh file, under the bin folder, replace the line 
 ```cp -r .csse6400/tests .``` with ```cp -r ./.csse6400/tests ./tests```
