@@ -41,6 +41,7 @@
 # Running the app on port 6400
 
 The following command will run the app on port 6400.
+
 `pipenv run flask --app todo run -p 6400`
 
      Note: If port is not avalilable then run the following
@@ -69,8 +70,11 @@ of VSCode.
 #### Running the CI tests locally with the following commands:
 
 Project structure: `bash ./.csse6400/bin/validate_structure.sh`
+
 Clean repository: `bash ./.csse6400/bin/clean_repository.sh`
+
 Health endpoint: ` bash ./.csse6400/bin/health.sh`
+
 Unit tests: `bash ./.csse6400/bin/unittest.sh`
 
 The 'RestClient' extention allows to run tests directly from
