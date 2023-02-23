@@ -1,24 +1,61 @@
-# CSSE6400 Week 1 Practical - TODO API
+# Week 1 Practical: TODO App
 
-- Full details can be found here: https://csse6400.uqcloud.net/practicals/week01.pdf
-- A minimal HTTP API of a todo app (HTTP server in Python) using the Flask framework.
+- This week we are creating a minimal HTTP API for a todo app (HTTP server in Python) 
+- [Practical handout with details can be found here](https://csse6400.uqcloud.net/practicals/week01.pdf)
 
-# Environment Setup
+# Commiting changes to GitHub
+	Note: On Windows, if using github desktop then token is not required 
+	for access. Authentication is done through the browser.	Other Git 
+	clients will need a token that can be easily be created in the github account.
+	
+# Setup and Installation in Windows using Visual Studio Code (VSCode)
 
-- Install pipenv to manage the Python libraries:
+#### For Windows: There are a couple of workflows:
+1. Using Windows Subsystem for Linux (WSL)
+	- Installing WSL and switching to WSL mode in Visual Studo
+2. Using Windows :)
+	- Downloading python executable for Python
 
-```bash
-python3 -m pip install pipenv
-```
 
-- Install Flask
+## 1 - Using Windows Subsystem for Linux (WSL)
 
-```bash
-pipenv install flask
-```
+- Install WSL - (https://learn.microsoft.com/en-us/windows/wsl/install)
+- Clone practical repo (if havent done before) and open in VSCode
+- Install the WSL extention for VSCode
+- Switch (from the status bar) to WSL Ubuntu mode in VSCode. This should change the - terminal to Bash. (also can be done by just typing 'wsl' in the terminal)
+- The extention for WSL allow VSCode to switch to the linux file system and list Ubuntu version of the extentions
+- Install Ubuntu version of the 'RestClient' extention in VSCode as mentoned in the practical handout.
+- Run the following commands in the terminal.
+	- ```sudo apt install python3``` - installs the latest python version.
+	- ```sudo apt install python3 - pip``` - installs the package manager
+	- ```sudo apt install pipenv``` - to manage the Python libraries we need for this project
+	- ```pipenv --python 3``` - Init Python environment under project root directory
+	- ```pipenv install flask``` - Installs Flask for the project
 
-# Run the app on port 6400 using the following command:
 
-```bash
-pipenv run flask --app todo run -p 6400
-```
+## Running the app on port 6400
+```pipenv run flask --app todo run -p 6400```
+
+Note: If port is not avalilable then run the following in the bash terminal to clear the port.
+```fuser -k 6400/tcp``` - kills process on this port
+https://stackoverflow.com/a/11596144
+
+
+## Running Tests locally
+
+The bash files that are under ./.csse6400/bin will have line ending issues when running tests locally.  In VSCode open each of the bash file, change the line ending in VSCode from 'CRLF' to 'LF' and save one at a time. This option to switch between line endings is available on the status bar of VSCode.
+
+For the unittest.sh file, under the bin folder, replace the line 
+```cp -r .csse6400/tests .``` with ```cp -r ./.csse6400/tests ./tests```
+
+#### Running the CI tests locally with the following commands:
+
+Project structure: ```bash ./.csse6400/bin/validate_structure.sh```
+Clean repository: ```bash ./.csse6400/bin/clean_repository.sh```
+Health endpoint: ``` bash ./.csse6400/bin/health.sh```
+Unit tests: ```bash ./.csse6400/bin/unittest.sh```
+
+
+## 2 - Using Windows
+
+ **TODO** 
