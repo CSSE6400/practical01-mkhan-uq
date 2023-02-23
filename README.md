@@ -28,7 +28,7 @@
 
 ## 2 - Using Windows
 
-- Download and install Python from https://www.python.org/downloads/
+- Download and install Python (CPython implementation) from https://www.python.org/downloads/
 - Python version = 3.11.2
 - Clone practical repo (if haven't done so) and open in VSCode
 - Install ‘RestClient’ extention in VSCode
